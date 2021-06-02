@@ -6,7 +6,9 @@ public class ChessBoard {
         int rsl = 0;
         int cellx = Math.abs(x1 - x2);
         int celly = Math.abs(y1 - y2);
-        if (x1 >= 0 && x2 >= 0 && y1 >= 0 && y2 >= 0 && cellx == celly) {
+        if (x1 >= 0 && x2 >= 0 && y1 >= 0 && y2 >= 0
+                && x1 <= 7 && x2 <= 7 && y1 <= 7 && y2 <= 7
+                && cellx == celly) {
             rsl = cellx;
         }
         return rsl;
